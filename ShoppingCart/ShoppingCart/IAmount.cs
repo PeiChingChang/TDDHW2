@@ -7,6 +7,6 @@ namespace ShoppingCart
 {
     public interface IAmount
     {
-        int CalculateAmount(IEnumerable<book> diffBook, IEnumerable<book> sameBook);
+        int CalculateAmount(IEnumerable<book> diffBook);
     }
 }

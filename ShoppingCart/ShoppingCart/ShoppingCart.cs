@@ -13,14 +13,18 @@ namespace ShoppingCart
             if (bookCollection == null || bookCollection.Count() == 0)
                 return 0;
 
-            var diffBook = bookCollection.Distinct(o => o.Id);
-            var sameBook = bookCollection.Except(diffBook);
-
-            IAmount amount = GetAmount(diffBook.Count());
-            if (amount == null)
-                return 0;
-
-            return amount.CalculateAmount(diffBook, sameBook);
+            var remainBook = bookCollection;
+            var result = 0;
+            while(remainBook.Count()>0)
+            {
+                var diffBook = remainBook.Distinct(o => o.Id);
+                remainBook = remainBook.Except(diffBook).ToList();
+                IAmount amount = GetAmount(diffBook.Count());
+                if (amount == null)
+                    return 0;
+                result += amount.CalculateAmount(diffBook);
+            }
+            return result;
         }
 
         private IAmount GetAmount(int diffBookCount)

@@ -130,6 +130,28 @@ namespace ShoppingCart.Tests
             var expectedResult = 370;
             Assert.AreEqual(expectedResult, actual);
         }
+
+        [TestMethod()]
+        public void 第一集買一本_第二三集各買兩本_價格為460()
+        {
+            // Arrange
+            var target = new ShoppingCart();
+            var books = new List<book>()
+            {
+                new book() { Id = 1,Name="HarryPorter1",Price=100},
+                new book() { Id = 2,Name="HarryPorter2",Price=100},
+                new book() { Id = 2,Name="HarryPorter2",Price=100},
+                new book() { Id = 3,Name="HarryPorter3",Price=100},
+                new book() { Id = 3,Name="HarryPorter3",Price=100},
+            };
+
+            // Act
+            var actual = target.CalculateAmount(books);
+
+            // Assert
+            var expectedResult = 460;
+            Assert.AreEqual(expectedResult, actual);
+        }
         
     }
 }
