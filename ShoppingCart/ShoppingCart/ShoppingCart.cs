@@ -9,33 +9,36 @@ namespace ShoppingCart
     {
         public int CalculateAmount(List<book> bookCollection)
         {
-            int amount = 0;
 
             if (bookCollection == null || bookCollection.Count() == 0)
-                return amount;
+                return 0;
 
             var diffBook = bookCollection.Distinct(o => o.Id);
             var sameBook = bookCollection.Except(diffBook);
 
-            switch (diffBook.Count())
+            IAmount amount = GetAmount(diffBook.Count());
+            if (amount == null)
+                return 0;
+
+            return amount.CalculateAmount(diffBook, sameBook);
+        }
+
+        private IAmount GetAmount(int diffBookCount)
+        {
+            IAmount amount = null;
+            switch (diffBookCount)
             {
                 case 1:
-                    amount = Convert.ToInt32(Math.Ceiling(diffBook.Sum(o => o.Price) * 1.0 + sameBook.Sum(o => o.Price)));
-                    break;
+                    return new NoDiscount();
                 case 2:
-                    amount = Convert.ToInt32(Math.Ceiling(diffBook.Sum(o => o.Price) * 0.95 + sameBook.Sum(o => o.Price)));
-                    break;
+                    return new fivePercentageOf();
                 case 3:
-                    amount = Convert.ToInt32(Math.Ceiling(diffBook.Sum(o => o.Price) * 0.9 + sameBook.Sum(o => o.Price)));
-                    break;
+                    return new tenPercentageOf();
                 case 4:
-                    amount = Convert.ToInt32(Math.Ceiling(diffBook.Sum(o => o.Price) * 0.8 + sameBook.Sum(o => o.Price)));
-                    break;
+                    return new twentyPercentageOf();
                 case 5:
-                    amount = Convert.ToInt32(Math.Ceiling(diffBook.Sum(o => o.Price) * 0.75 + sameBook.Sum(o => o.Price)));
-                    break;
+                    return new twentyFivePercentageOf();
             }
-
             return amount;
         }
     }
