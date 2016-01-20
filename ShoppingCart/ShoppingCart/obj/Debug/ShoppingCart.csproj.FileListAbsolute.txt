@@ -3,3 +3,8 @@ D:\TDD課程\TDDHW2\ShoppingCart\ShoppingCart\bin\Debug\ShoppingCart.pdb
 D:\TDD課程\TDDHW2\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
 D:\TDD課程\TDDHW2\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.dll
 D:\TDD課程\TDDHW2\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.pdb
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCart\bin\Debug\ShoppingCart.dll
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCart\bin\Debug\ShoppingCart.pdb
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.dll
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.pdb

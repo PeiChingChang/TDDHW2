@@ -5,3 +5,10 @@ D:\TDD課程\TDDHW2\ShoppingCart\ShoppingCartTests\bin\Debug\ShoppingCart.pdb
 D:\TDD課程\TDDHW2\ShoppingCart\ShoppingCartTests\obj\Debug\ShoppingCartTests.csprojResolveAssemblyReference.cache
 D:\TDD課程\TDDHW2\ShoppingCart\ShoppingCartTests\obj\Debug\ShoppingCartTests.dll
 D:\TDD課程\TDDHW2\ShoppingCart\ShoppingCartTests\obj\Debug\ShoppingCartTests.pdb
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCartTests\bin\Debug\ShoppingCartTests.dll
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCartTests\bin\Debug\ShoppingCartTests.pdb
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCartTests\bin\Debug\ShoppingCart.dll
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCartTests\bin\Debug\ShoppingCart.pdb
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCartTests\obj\Debug\ShoppingCartTests.csprojResolveAssemblyReference.cache
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCartTests\obj\Debug\ShoppingCartTests.dll
+D:\TDD課程\TDDHW2_github\ShoppingCart\ShoppingCartTests\obj\Debug\ShoppingCartTests.pdb
