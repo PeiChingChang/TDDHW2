@@ -22,6 +22,9 @@ namespace ShoppingCart
                 case 1:
                     amount = Convert.ToInt32(Math.Ceiling(diffBook.Sum(o => o.Price) * 1.0 + sameBook.Sum(o => o.Price)));
                     break;
+                case 2:
+                    amount = Convert.ToInt32(Math.Ceiling(diffBook.Sum(o => o.Price) * 0.95 + sameBook.Sum(o => o.Price)));
+                    break;
             }
 
             return amount;
